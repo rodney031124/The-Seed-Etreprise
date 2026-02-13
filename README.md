@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The Seed Etreprise - Professional Website
 
 A fully functional, professional website for The Seed Etreprise offering VIP Protection Services, Property Services, and Web Development solutions.
@@ -35,3 +36,7 @@ Before you begin, ensure you have installed:
 
 ```bash
 npm install -g firebase-tools
+=======
+# The-Seed-Etreprise
+The Seed Etreprise is a newly established company dedicated to providing professional services in three core areas: VIP Protection, Property Buying and Selling, and Web Development.
+>>>>>>> fa007a3b0db66231bfc415d292d62fb7c10944f4

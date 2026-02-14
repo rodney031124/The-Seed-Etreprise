@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceCard from '../components/ServiceCard';
+//import ServiceCard from '../components/ServiceCard';
 import '../styles/services.css';
 
 function Services() {

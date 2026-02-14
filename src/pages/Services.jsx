@@ -37,8 +37,7 @@ function Services() {
               <div className="detail-column">
                 <h3>Why Choose Our VIP Protection?</h3>
                 <ul className="benefits-list">
-                  <li><i className="fas fa-check"></i> Experienced security professionals with military/law enforcement backgrounds</li>
-                  <li><i className="fas fa-check"></i> Advanced threat assessment technologies</li>
+
                   <li><i className="fas fa-check"></i> Discrete and professional service delivery</li>
                   <li><i className="fas fa-check"></i> Customized security solutions for each client</li>
                   <li><i className="fas fa-check"></i> Rapid response capabilities 24/7</li>

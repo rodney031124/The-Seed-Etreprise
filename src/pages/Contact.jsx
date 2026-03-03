@@ -94,7 +94,8 @@ function Contact() {
               
               <div className="info-block">
                 <h3><i className="fas fa-phone"></i> Phone</h3>
-                <p><a href="tel:+27789719713">+27 789 719 713</a></p>
+                <p><a href="tel:+27789719713">+27 78 971 9713</a></p>
+                <p><a href="tel:+27678938460">+27 67 893 8460</a></p>
                 <p className="info-label">Available 24/7 for emergencies</p>
               </div>
 

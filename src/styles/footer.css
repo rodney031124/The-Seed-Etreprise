@@ -12,7 +12,7 @@
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -33,6 +33,7 @@
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0.75rem;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .footer-section ul {
@@ -49,6 +50,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.25rem 0;
+  min-height: 44px;
+  align-items: center;
 }
 
 .footer-section a:hover {
@@ -69,11 +73,12 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: rgba(232, 162, 17, 0.2);
   display: flex;
@@ -81,6 +86,8 @@
   justify-content: center;
   transition: var(--transition);
   color: var(--accent-color);
+  min-width: 44px;
+  cursor: pointer;
 }
 
 .social-link:hover {
@@ -89,31 +96,48 @@
   transform: translateY(-5px);
 }
 
+.social-link:active {
+  transform: scale(0.95);
+}
+
 /* Footer Bottom */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1.5rem 0;
+  padding: 1.5rem 20px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 20px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
 }
 
 .footer-bottom p {
   margin: 0;
+  line-height: 1.6;
 }
 
 .footer-bottom a {
   color: var(--accent-color);
+  transition: var(--transition);
 }
 
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Tablet Breakpoint (1024px) */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer {
+    padding: 2.5rem 0 1rem;
+  }
+}
+
+/* Mobile Breakpoint (768px) */
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 0 1rem;
@@ -138,12 +162,19 @@
   }
 
   .social-link {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    padding: 1.25rem 20px;
+    font-size: 0.85rem;
   }
 }
 
+/* Small Mobile Breakpoint (480px) */
 @media (max-width: 480px) {
   .footer {
     padding: 1.5rem 0 0.75rem;
@@ -154,8 +185,38 @@
     gap: 1.5rem;
   }
 
-  .footer-bottom {
-    padding: 1rem 20px;
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-section p {
     font-size: 0.85rem;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  .social-links {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .social-link {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    padding: 1rem 15px;
+    font-size: 0.8rem;
+  }
+
+  .footer-section a {
+    min-height: 40px;
   }
 }

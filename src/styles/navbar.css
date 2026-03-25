@@ -27,6 +27,8 @@
   gap: 0.5rem;
   transition: var(--transition);
   white-space: nowrap;
+  min-height: 48px;
+  padding: 0.5rem 0;
 }
 
 .navbar-logo:hover {
@@ -58,11 +60,18 @@
   gap: 0.5rem;
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
+  min-height: 48px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .nav-link:hover {
   color: var(--accent-color);
   border-bottom-color: var(--accent-color);
+}
+
+.nav-link:active {
+  transform: scale(0.98);
 }
 
 .nav-link.admin-link {
@@ -84,6 +93,10 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   border: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
 }
 
 .logout-btn:hover {
@@ -97,6 +110,11 @@
   flex-direction: column;
   cursor: pointer;
   gap: 0.4rem;
+  padding: 0.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hamburger span {
@@ -105,6 +123,7 @@
   background-color: var(--white);
   border-radius: 2px;
   transition: var(--transition);
+  display: block;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -119,7 +138,22 @@
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Responsive */
+/* Tablet Breakpoint (1024px) */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 18px;
+  }
+
+  .nav-menu {
+    gap: 1.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile Breakpoint (768px) */
 @media (max-width: 768px) {
   .navbar-container {
     padding: 0 15px;
@@ -149,6 +183,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    list-style: none;
   }
 
   .nav-menu.active {
@@ -160,6 +195,7 @@
     padding: 1rem 20px;
     border: none;
     border-left: 3px solid transparent;
+    min-height: 48px;
   }
 
   .nav-link:hover {
@@ -184,9 +220,32 @@
   }
 }
 
+/* Small Mobile Breakpoint (480px) */
 @media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-container {
+    padding: 0 12px;
+  }
+
   .navbar-logo {
     font-size: 1rem;
+  }
+
+  .navbar-logo i {
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .hamburger span {
+    width: 22px;
+    height: 2.5px;
   }
 
   .nav-menu {
@@ -194,6 +253,14 @@
   }
 
   .nav-link {
-    padding: 0.75rem 20px;
+    padding: 0.75rem 15px;
+    font-size: 0.95rem;
+  }
+
+  .logout-btn {
+    width: calc(100% - 30px);
+    margin: 0.75rem 15px 0;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }

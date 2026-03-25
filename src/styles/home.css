@@ -66,8 +66,12 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(20px); }
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 
 .hero-content {
@@ -103,6 +107,10 @@
   justify-content: center;
   flex-wrap: wrap;
   animation: fadeIn 0.8s ease 0.4s both;
+}
+
+.hero-buttons .btn {
+  margin: 0;
 }
 
 @keyframes slideInDown {
@@ -178,7 +186,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
@@ -205,7 +213,7 @@
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -216,7 +224,10 @@
   border-radius: var(--border-radius);
   transition: var(--transition);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Safari 9+ Support */
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  cursor: pointer;
 }
 
 .value-card:hover {
@@ -234,11 +245,13 @@
 .value-card h3 {
   color: var(--white);
   margin-bottom: 0.75rem;
+  margin-top: 0;
 }
 
 .value-card p {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
+  margin: 0;
 }
 
 /* Stats Section */
@@ -260,6 +273,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .stat-card:hover {
@@ -271,11 +285,13 @@
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .stat-card p {
   color: var(--light-text);
   font-size: 1rem;
+  margin: 0;
 }
 
 /* CTA Section */
@@ -289,16 +305,66 @@
 .cta-section h2 {
   color: var(--white);
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .cta-section p {
   color: rgba(255, 255, 255, 0.95);
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 
-/* Responsive */
+/* Tablet Breakpoint (1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 75vh;
+    padding: 3rem 0;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .values-grid {
+    gap: 1.5rem;
+  }
+
+  .stats-grid {
+    gap: 1.5rem;
+  }
+
+  .mission-section,
+  .services-preview,
+  .values-section,
+  .stats-section,
+  .cta-section {
+    padding: 3rem 0;
+  }
+
+  .shape-1,
+  .shape-2,
+  .shape-3 {
+    display: none;
+  }
+}
+
+/* Mobile Breakpoint (768px) */
 @media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 2.5rem 0;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
@@ -335,11 +401,26 @@
     padding: 1.5rem;
   }
 
-  .shape-1, .shape-2, .shape-3 {
+  .shape-1,
+  .shape-2,
+  .shape-3 {
     display: none;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .section-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .mission-content {
+    padding: 0 10px;
   }
 }
 
+/* Small Mobile Breakpoint (480px) */
 @media (max-width: 480px) {
   .hero {
     min-height: 60vh;
@@ -348,10 +429,23 @@
 
   .hero-title {
     font-size: 1.75rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.9rem;
   }
 
   .mission-section,
@@ -362,13 +456,66 @@
     padding: 1.5rem 0;
   }
 
+  .mission-content {
+    padding: 0 10px;
+  }
+
+  .mission-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .mission-content p {
+    font-size: 0.95rem;
+  }
+
   .services-grid,
   .values-grid,
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .value-card,
+  .stat-card {
+    padding: 1.25rem;
   }
 
   .stat-card h3 {
     font-size: 2rem;
+  }
+
+  .value-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .value-card h3,
+  .value-card p {
+    font-size: 0.95rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services-preview h2 {
+    font-size: 1.4rem;
+  }
+
+  .services-preview {
+    padding: 1.5rem 0;
   }
 }

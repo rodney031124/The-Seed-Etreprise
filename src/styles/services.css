@@ -264,44 +264,7 @@
   font-size: 0.95rem;
 }
 
-/* Tablet Breakpoint (1024px) */
-@media (max-width: 1024px) {
-  .services-hero {
-    padding: 3rem 0;
-  }
-
-  .services-hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .service-details {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .service-detail-section {
-    padding: 1.5rem;
-    margin-bottom: 3rem;
-  }
-
-  .services-detail {
-    padding: 3rem 0;
-  }
-
-  .process-grid {
-    gap: 1.5rem;
-  }
-
-  .header-icon {
-    font-size: 2.5rem;
-  }
-
-  .service-card {
-    padding: 1.5rem;
-  }
-}
-
-/* Mobile Breakpoint (768px) */
+/* Responsive */
 @media (max-width: 768px) {
   .services-hero {
     padding: 2.5rem 0;
@@ -335,19 +298,8 @@
   .header-icon {
     font-size: 2.5rem;
   }
-
-  .service-card {
-    padding: 1.5rem;
-  }
-
-  .service-icon {
-    width: 70px;
-    height: 70px;
-    font-size: 1.75rem;
-  }
 }
 
-/* Small Mobile Breakpoint (480px) */
 @media (max-width: 480px) {
   .services-hero {
     padding: 2rem 0;
@@ -357,12 +309,8 @@
     font-size: 1.5rem;
   }
 
-  .services-hero p {
-    font-size: 1rem;
-  }
-
   .service-card {
-    padding: 1.25rem;
+    padding: 1.5rem;
   }
 
   .service-icon {
@@ -371,23 +319,8 @@
     font-size: 1.5rem;
   }
 
-  .service-icon-wrapper {
-    margin-bottom: 1rem;
-  }
-
-  .service-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .service-description {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
   .service-detail-section {
     padding: 1rem;
-    margin-bottom: 2rem;
   }
 
   .service-details {
@@ -396,44 +329,10 @@
 
   .detail-column h3 {
     font-size: 1.1rem;
-    margin-bottom: 1rem;
   }
 
   .service-list li,
   .benefits-list li {
     padding: 0.75rem 0;
-  }
-
-  .service-header {
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .header-icon {
-    font-size: 2rem;
-  }
-
-  .service-header h2 {
-    font-size: 1.3rem;
-  }
-
-  .process-step {
-    padding: 1.5rem;
-  }
-
-  .step-number {
-    width: 44px;
-    height: 44px;
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .process-step h4 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .process-step p {
-    font-size: 0.9rem;
   }
 }

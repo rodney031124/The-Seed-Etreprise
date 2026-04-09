@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .navbar-logo {
@@ -102,6 +103,11 @@
   flex-direction: column;
   cursor: pointer;
   gap: 0.4rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
 }
 
 .hamburger span {
@@ -143,21 +149,23 @@
   }
 
   .nav-menu {
-    position: absolute;
+    position: fixed;
     top: 70px;
-    left: 0;
-    width: 100%;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: calc(100vh - 70px);
     background: linear-gradient(135deg, var(--primary-color) 0%, #1f4038 100%);
     flex-direction: column;
     gap: 0;
     padding: 1.5rem 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
   }
 
   .nav-menu.active {
-    max-height: 400px;
+    right: 0;
   }
 
   /* Show Home link inside mobile hamburger menu */
@@ -203,8 +211,13 @@
     font-size: 1rem;
   }
 
+  .hamburger {
+    right: 16px;
+  }
+
   .nav-menu {
     top: 60px;
+    width: 85%;
   }
 
   .nav-link {

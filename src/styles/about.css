@@ -205,6 +205,41 @@
 }
 
 /* Responsive */
+@media (min-width: 1200px) {
+  .about-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 3rem 0;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content,
+  .values,
+  .team,
+  .philosophy {
+    padding: 3rem 0;
+  }
+}
+
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;

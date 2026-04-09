@@ -292,23 +292,33 @@
 @media (max-width: 768px) {
   .services-hero {
     padding: 2.5rem 0;
+    width: 100%;
+    text-align: center;
   }
 
   .services-hero h1 {
     font-size: 2rem;
   }
 
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .service-details {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 
   .service-header {
     flex-direction: column;
     gap: 1rem;
+    align-items: stretch;
   }
 
   .service-detail-section {
     padding: 1.5rem;
+    width: 100%;
   }
 
   .services-detail {
@@ -317,6 +327,7 @@
 
   .process-grid {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .header-icon {
@@ -335,6 +346,8 @@
 
   .service-card {
     padding: 1.5rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .service-icon {
@@ -349,6 +362,7 @@
 
   .service-details {
     gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .detail-column h3 {

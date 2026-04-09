@@ -241,25 +241,49 @@
 }
 
 @media (max-width: 768px) {
+  .about-hero {
+    padding: 2.5rem 16px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
+  }
+
+  .about-text,
+  .about-stats,
+  .stat,
+  .team-member,
+  .value {
+    width: 100%;
+    max-width: 100%;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
   }
 
   .about-content,
   .values,
   .team,
   .philosophy {
-    padding: 2.5rem 0;
+    padding: 2.5rem 16px;
+    width: 100%;
   }
 
   .team-grid,
   .values-grid {
     gap: 1.5rem;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .member-avatar {
@@ -267,34 +291,58 @@
     height: 80px;
     font-size: 2.5rem;
   }
+
+  .about-text p {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   .about-hero {
-    padding: 2rem 0;
+    padding: 2rem 16px;
+    text-align: center;
   }
 
   .about-hero h1 {
     font-size: 1.75rem;
   }
 
+  .about-hero p,
+  .about-text p,
+  .team-intro,
+  .philosophy p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
   .about-content,
   .values,
   .team,
   .philosophy {
-    padding: 1.5rem 0;
+    padding: 1.5rem 16px;
+    width: 100%;
   }
 
   .team-grid,
-  .values-grid {
+  .values-grid,
+  .about-stats {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .stat-number {
     font-size: 2rem;
   }
 
-  .stat {
+  .stat,
+  .value,
+  .team-member {
     padding: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-grid {
+    gap: 1.5rem;
   }
 }

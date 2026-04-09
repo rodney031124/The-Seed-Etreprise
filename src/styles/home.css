@@ -322,6 +322,21 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 16px;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
@@ -337,6 +352,7 @@
 
   .hero-buttons .btn {
     width: 100%;
+    max-width: 100%;
   }
 
   .mission-section,

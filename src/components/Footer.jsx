@@ -9,7 +9,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h3><i className="fas fa-leaf"></i> The Seed Etreprise</h3>
+          <h3 className="footer-logo">
+            <img src="/The Seed Etreprise.png" alt="The Seed Etreprise Logo" className="footer-logo-img" />
+          </h3>
           <p>Providing professional VIP Protection, Property Services, and cutting-edge Web Development solutions across South Africa.</p>
           <div className="social-links">
             <a href="https://facebook.com/seedetreprise" target="_blank" rel="noopener noreferrer" title="Facebook" className="social-link">

@@ -24,6 +24,13 @@
   font-size: 1.1rem;
 }
 
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+}
+
 .footer-section h3 i {
   margin-right: 0.5rem;
   color: var(--accent-color);

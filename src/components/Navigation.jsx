@@ -9,7 +9,7 @@ function Navigation() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <i className="fas fa-leaf"></i> The Seed Etreprise
+          <img src="/The Seed Etreprise.png" alt="The Seed Etreprise Logo" className="navbar-logo-img" />
         </Link>
 
         <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>

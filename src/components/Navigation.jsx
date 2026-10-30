@@ -10,7 +10,7 @@ function Navigation() {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <img src="/The Seed Etreprise.png" alt="The Seed Enterprise Logo" className="navbar-logo-img" />
-          <span>The Seed Enterprise</span>
+          <span></span>
         </Link>
 
         <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>

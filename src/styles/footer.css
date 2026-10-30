@@ -92,7 +92,7 @@
 
 .social-link:hover {
   background-color: var(--accent-color);
-  color: var(--white);
+  color: var(--primary-color);
   transform: translateY(-5px);
 }
 

@@ -147,7 +147,7 @@
 
 .detail-column h3 i {
   font-size: 1.5rem;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .service-list,

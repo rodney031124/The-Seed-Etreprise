@@ -7,22 +7,39 @@ import '../styles/home.css';
 function Home() {
   const services = [
     {
-      icon: 'shield-alt',
-      title: 'VIP Protection',
-      description: 'Comprehensive security and protection services for high-profile individuals and executives.',
-      features: ['24/7 Security', 'Risk Assessment', 'Executive Protection', 'Secure Transportation']
+      category: 'Digital Solutions',
+      services: [
+        {
+          title: 'Web Development',
+          description: 'Custom, mobile-friendly websites designed to establish your brand, attract more customers, and elevate your online presence.',
+          features: ['Custom & Responsive Design', 'Risk-Free Demo', 'Modern Tech (React/Firebase)', 'Ongoing Support']
+        },
+        {
+          title: 'Mobile App Development',
+          description: 'Custom Android and cross-platform mobile applications tailored to your business needs.',
+          features: ['Cross-Platform (Flutter)', 'Android Native (Java)', 'Offline-First Capabilities', 'Deployment']
+        },
+        {
+          title: 'Graphic Design',
+          description: 'Eye-catching posters, flyers, and digital graphics that make your brand stand out.',
+          features: ['Poster & Flyer Design', 'Social Media Graphics', 'Brand Consistency', 'Print-Ready Files']
+        }
+      ]
     },
     {
-      icon: 'home',
-      title: 'Property Services',
-      description: 'Complete property buying and selling solutions with expert market analysis.',
-      features: ['Market Analysis', 'Negotiation', 'Legal Support', 'Portfolio Management']
-    },
-    {
-      icon: 'code',
-      title: 'Web Development',
-      description: 'Custom web solutions designed to elevate your business online presence.',
-      features: ['Responsive Design', 'E-Commerce', 'SEO Optimization', 'Maintenance Support']
+      category: 'Security & Real Estate',
+      services: [
+        {
+          title: 'VIP Protection',
+          description: 'Comprehensive security and protection services for high-profile individuals and executives.',
+          features: ['24/7 Security', 'Risk Assessment', 'Executive Protection', 'Secure Transportation']
+        },
+        {
+          title: 'Property Services',
+          description: 'Complete property buying and selling solutions with expert market analysis.',
+          features: ['Market Analysis', 'Negotiation', 'Legal Support', 'Portfolio Management']
+        }
+      ]
     }
   ];
 
@@ -33,18 +50,23 @@ function Home() {
       <section className="mission-section">
         <div className="container">
           <h2>Our Mission</h2>
-          <p>At The Seed Etreprise, we are committed to delivering exceptional services with the highest standards of professionalism, integrity, and confidentiality. Our team of experts is dedicated to ensuring your complete satisfaction and security.</p>
+          <p>At The Seed Enterprise, we are committed to delivering exceptional services with the highest standards of professionalism, integrity, and confidentiality. Our team of experts is dedicated to ensuring your complete satisfaction and security.</p>
         </div>
       </section>
 
       <section className="services-preview">
         <div className="container">
           <h2>Our Core Services</h2>
-          <div className="services-grid">
-            {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
-            ))}
-          </div>
+          {services.map((category) => (
+            <section className="service-category" key={category.category}>
+              <h3 className="service-category-title">{category.category}</h3>
+              <div className="service-category-grid">
+                {category.services.map((service) => (
+                  <ServiceCard key={service.title} {...service} />
+                ))}
+              </div>
+            </section>
+          ))}
           <div className="services-cta">
             <Link to="/services" className="btn btn-primary">
               View All Services

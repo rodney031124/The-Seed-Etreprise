@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3 className="footer-logo">
-            <img src="/The Seed Etreprise.png" alt="The Seed Etreprise Logo" className="footer-logo-img" />
+            <img src="/The Seed Etreprise.png" alt="The Seed Enterprise Logo" className="footer-logo-img" />
           </h3>
           <p>Providing digital solutions, VIP protection, and property services across South Africa.</p>
           <div className="social-links">
@@ -57,7 +57,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} The Seed Etreprise. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+        <p>&copy; {currentYear} The Seed Enterprise. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
       </div>
     </footer>
   );

@@ -13,7 +13,7 @@ function Home() {
       <section className="mission-section">
         <div className="container">
           <h2>Our Mission</h2>
-          <p>At The Seed Etreprise, we are committed to delivering exceptional digital, security, and property services with the highest standards of professionalism, integrity, and confidentiality.</p>
+          <p>At The Seed Enterprise, we are committed to delivering exceptional digital, security, and property services with the highest standards of professionalism, integrity, and confidentiality.</p>
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 {
   "name": "the-seed-etreprise",
   "version": "1.0.0",
-  "description": "Professional website for The Seed Etreprise - VIP Protection, Property Services, and Web Development",
+  "description": "Professional website for The Seed Enterprise - Digital Solutions, VIP Protection, and Property Services",
   "private": true,
   "dependencies": {
     "@firebase/app": "^0.14.8",

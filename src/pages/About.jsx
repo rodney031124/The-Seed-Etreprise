@@ -21,7 +21,7 @@ function About() {
     <div className="about-page">
       <section className="about-hero">
         <div className="container">
-          <h1>About The Seed Etreprise</h1>
+          <h1>About The Seed Enterprise</h1>
           <p>Building Trust, Delivering Excellence</p>
         </div>
       </section>
@@ -32,7 +32,7 @@ function About() {
             <div className="about-text">
               <h2>Our Story</h2>
               <p>
-                The Seed Etreprise brings together digital solutions, personal protection, and property services to support individuals and businesses across South Africa.
+                The Seed Enterprise brings together digital solutions, personal protection, and property services to support individuals and businesses across South Africa.
               </p>
               <p>
                 Our digital solutions include custom websites, mobile applications, and graphic design. We also provide VIP protection and professional property buying and selling support, with every service grounded in integrity, reliability, and care.
@@ -137,7 +137,7 @@ function About() {
         <div className="container">
           <h2>Our Philosophy</h2>
           <p>
-            As a newly established company, The Seed Etreprise is built on the foundation of providing exceptional service from day one. We believe that success comes from understanding our clients' unique needs and delivering solutions tailored to their specific requirements. We are committed to building strong relationships based on trust, transparency, and consistent delivery of quality services. Every client interaction is an opportunity to demonstrate our commitment to excellence and professionalism.
+            As a newly established company, The Seed Enterprise is built on the foundation of providing exceptional service from day one. We believe that success comes from understanding our clients' unique needs and delivering solutions tailored to their specific requirements. We are committed to building strong relationships based on trust, transparency, and consistent delivery of quality services. Every client interaction is an opportunity to demonstrate our commitment to excellence and professionalism.
           </p>
         </div>
       </section>

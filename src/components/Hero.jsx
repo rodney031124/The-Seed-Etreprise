@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1 className="hero-title">Welcome to The Seed Etreprise</h1>
+        <h1 className="hero-title">Welcome to The Seed Enterprise</h1>
         <p className="hero-subtitle">Digital Solutions, VIP Protection & Property Services</p>
         <div className="hero-buttons">
           <Link to="/services" className="btn btn-primary">

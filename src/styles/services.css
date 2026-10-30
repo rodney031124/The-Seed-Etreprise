@@ -98,6 +98,37 @@
   padding: 4rem 0;
 }
 
+.services-catalog .service-category {
+  margin-bottom: 4rem;
+  scroll-margin-top: 100px;
+}
+
+.services-catalog .service-category-title {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.services-catalog .service-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.services-contact-cta {
+  padding: 2rem;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.services-contact-cta h2 {
+  margin-bottom: 0.75rem;
+}
+
+.services-contact-cta p {
+  color: var(--text-color);
+}
+
 .service-detail-section {
   margin-bottom: 4rem;
   padding: 2rem;

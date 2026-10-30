@@ -216,9 +216,15 @@ function Contact() {
                       disabled={loading}
                     >
                       <option value="">Select a service</option>
-                      <option value="vip-protection">VIP Protection</option>
-                      <option value="property">Property Services</option>
-                      <option value="web-development">Web Development</option>
+                      <optgroup label="Digital Solutions">
+                        <option value="web-development">Web Development</option>
+                        <option value="mobile-app-development">Mobile App Development</option>
+                        <option value="graphic-design">Graphic Design</option>
+                      </optgroup>
+                      <optgroup label="Security & Real Estate">
+                        <option value="vip-protection">VIP Protection</option>
+                        <option value="property-services">Property Services</option>
+                      </optgroup>
                       <option value="other">Other Inquiry</option>
                     </select>
                   </div>

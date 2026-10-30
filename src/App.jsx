@@ -8,11 +8,18 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    const target = hash ? document.getElementById(decodeURIComponent(hash.slice(1))) : null;
+
+    if (target) {
+      target.scrollIntoView({ block: 'start', behavior: 'instant' });
+      return;
+    }
+
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }

@@ -12,7 +12,7 @@ function About() {
     {
       name: 'Rotshidzwa Rodney Mavhungu',
       role: 'Web Developer & Landscaper',
-      expertise: 'Full-Stack Development, Landscaping',
+      expertise: 'Web Development, Mobile Apps, Graphic Design',
       icon: 'laptop'
     }
   ];
@@ -32,19 +32,19 @@ function About() {
             <div className="about-text">
               <h2>Our Story</h2>
               <p>
-                The Seed Etreprise is a newly established company dedicated to providing professional services in three core areas: VIP Protection, Property Buying and Selling, and Web Development. 
+                The Seed Etreprise brings together digital solutions, personal protection, and property services to support individuals and businesses across South Africa.
               </p>
               <p>
-                We offer reliable and secure protection services to individuals and organizations, ensuring safety and confidentiality at all times. Our property services focus on assisting clients with the buying and selling of property in a professional and efficient manner. We also provide web development services that help businesses establish and maintain a strong online presence.
+                Our digital solutions include custom websites, mobile applications, and graphic design. We also provide VIP protection and professional property buying and selling support, with every service grounded in integrity, reliability, and care.
               </p>
               <p>
-                The Seed Etreprise is committed to delivering high-quality services with integrity, professionalism, and reliability. As we grow, we're dedicated to building long-term relationships with our clients based on trust and exceptional service delivery.
+                We are committed to delivering high-quality work and building long-term client relationships based on trust, clear communication, and dependable service.
               </p>
             </div>
             <div className="about-stats">
               <div className="stat">
-                <h3>3</h3>
-                <p>Core Services</p>
+                <h3>5</h3>
+                <p>Service Areas</p>
               </div>
               <div className="stat">
                 <h3>2</h3>

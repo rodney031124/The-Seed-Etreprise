@@ -12,7 +12,7 @@ function Footer() {
           <h3 className="footer-logo">
             <img src="/The Seed Etreprise.png" alt="The Seed Etreprise Logo" className="footer-logo-img" />
           </h3>
-          <p>Providing professional VIP Protection, Property Services, and cutting-edge Web Development solutions across South Africa.</p>
+          <p>Providing digital solutions, VIP protection, and property services across South Africa.</p>
           <div className="social-links">
             <a href="https://facebook.com/seedetreprise" target="_blank" rel="noopener noreferrer" title="Facebook" className="social-link">
               <i className="fab fa-facebook"></i>
@@ -42,9 +42,8 @@ function Footer() {
         <div className="footer-section">
           <h4>Services</h4>
           <ul>
-            <li><a href="/#vip-protection">VIP Protection</a></li>
-            <li><a href="/#property">Property Services</a></li>
-            <li><a href="/#web-dev">Web Development</a></li>
+            <li><Link to="/services#digital-solutions">Digital Solutions</Link></li>
+            <li><Link to="/services#security-real-estate">Security & Real Estate</Link></li>
             <li><a href="/contact">Request Quote</a></li>
           </ul>
         </div>

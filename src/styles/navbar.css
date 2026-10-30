@@ -68,11 +68,6 @@
   border-bottom: 2px solid transparent;
 }
 
-/* Hide Home link on desktop */
-.nav-link:first-of-type {
-  display: none;
-}
-
 .nav-link:hover {
   color: var(--accent-color);
   border-bottom-color: var(--accent-color);
@@ -173,11 +168,6 @@
 
   .nav-menu.active {
     right: 0;
-  }
-
-  /* Show Home link inside mobile hamburger menu */
-  .nav-link:first-of-type {
-    display: flex;
   }
 
   .nav-link {

@@ -281,19 +281,19 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--accent-color) 0%, #d48a0a 100%);
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
   padding: 4rem 0;
   text-align: center;
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .cta-section h2 {
-  color: var(--white);
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
 .cta-section p {
-  color: rgba(255, 255, 255, 0.95);
+  color: var(--primary-color);
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }

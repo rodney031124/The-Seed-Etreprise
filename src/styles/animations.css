@@ -199,10 +199,10 @@
 /* Glow Animation */
 @keyframes glow {
   0%, 100% {
-    text-shadow: 0 0 5px rgba(44, 95, 79, 0.5);
+    text-shadow: 0 0 5px rgba(var(--primary-rgb), 0.5);
   }
   50% {
-    text-shadow: 0 0 20px rgba(44, 95, 79, 0.9);
+    text-shadow: 0 0 20px rgba(var(--primary-rgb), 0.9);
   }
 }
 
@@ -330,7 +330,7 @@
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 15px rgba(232, 162, 17, 0.5);
+  box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.5);
 }
 
 .hover-spin:hover {

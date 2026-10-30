@@ -142,13 +142,13 @@ function About() {
         </div>
       </section>
 
-      <section className="cta-section" style={{ background: 'linear-gradient(135deg, var(--accent-color) 0%, #d48a0a 100%)', padding: '4rem 0', textAlign: 'center', color: 'white', marginTop: '4rem' }}>
+      <section className="cta-section about-cta">
         <div className="container">
-          <h2 style={{ color: 'white', marginBottom: '1rem' }}>Ready to Work With Us?</h2>
-          <p style={{ color: 'rgba(255, 255, 255, 0.95)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+          <h2>Ready to Work With Us?</h2>
+          <p>
             Contact our team today to discuss your needs and how we can help you achieve your goals.
           </p>
-          <a href="/contact" className="btn btn-primary" style={{ backgroundColor: 'var(--primary-color)' }}>
+          <a href="/contact" className="btn btn-primary">
             <i className="fas fa-envelope"></i> Contact Us Now
           </a>
         </div>

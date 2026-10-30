@@ -204,6 +204,10 @@
   margin-right: auto;
 }
 
+.about-cta {
+  margin-top: 4rem;
+}
+
 /* Responsive */
 @media (min-width: 1200px) {
   .about-hero h1 {

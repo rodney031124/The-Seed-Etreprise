@@ -1,7 +1,7 @@
 /* ===== FOOTER STYLES ===== */
 
 .footer {
-  background: linear-gradient(135deg, #1f4038 0%, var(--primary-color) 100%);
+  background: linear-gradient(135deg, #052345 0%, var(--primary-color) 100%);
   color: var(--white);
   padding: 3rem 0 1rem;
   margin-top: auto;
@@ -82,7 +82,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(232, 162, 17, 0.2);
+  background-color: rgba(var(--accent-rgb), 0.2);
   display: flex;
   align-items: center;
   justify-content: center;

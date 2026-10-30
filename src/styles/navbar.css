@@ -1,7 +1,7 @@
 /* ===== NAVBAR STYLES ===== */
 
 .navbar {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #1f4038 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #052345 100%);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -162,7 +162,7 @@
     width: 80%;
     max-width: 300px;
     height: calc(100vh - 70px);
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1f4038 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #052345 100%);
     flex-direction: column;
     gap: 0;
     padding: 1.5rem 0;
@@ -190,7 +190,7 @@
   .nav-link:hover {
     border-bottom-color: transparent;
     border-left-color: var(--accent-color);
-    background-color: rgba(232, 162, 17, 0.1);
+    background-color: rgba(var(--accent-rgb), 0.1);
   }
 
   .nav-link.admin-link {
@@ -199,7 +199,7 @@
   }
 
   .nav-link.admin-link:hover {
-    background-color: rgba(232, 162, 17, 0.1);
+    background-color: rgba(var(--accent-rgb), 0.1);
     border-left-color: var(--accent-color);
   }
 
